@@ -1,7 +1,9 @@
 name: Workflow on Push
 on:
   push:
-    branches: ["main","develop", "feature/*"]
+    # branches: ["main","develop", "feature/*"]
+    tags:
+      - v*    
 jobs:
   teste:
     runs-on: ubuntu-latest
