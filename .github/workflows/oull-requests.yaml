@@ -1,0 +1,11 @@
+name: Workflow on Pull Requests
+on:
+  pull_request:
+    branches: ["develop"]
+jobs:
+  teste:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Action de teste
+        run: | 
+          echo "Executado em pull request na develop"
