@@ -5,8 +5,9 @@ on:
     # branches-ignore: ["main"]
     paths: 
       - "src/**"  
-    # paths-ignore:
-    #   - "workflow-execution-controll"    
+    paths-ignore:
+      - "workflow-execution-controll"    
+      - "./readme.md"
     tags:
       - v*    
 jobs:
