@@ -1,7 +1,12 @@
 name: Workflow on Push
 on:
   push:
-    # branches: ["main","develop", "feature/*"]
+    branches: ["develop", "feature/*"]
+    # branches-ignore: ["main"]
+    paths: 
+      - "src/**"  
+    # paths-ignore:
+    #   - "workflow-execution-controll"    
     tags:
       - v*    
 jobs:
