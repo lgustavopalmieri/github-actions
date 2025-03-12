@@ -1,0 +1,11 @@
+name: Workflow on Push
+on:
+  push:
+    branches: ["main","develop", "feature/*"]
+jobs:
+  teste:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Action de teste
+        run: | 
+          echo "Executado apenas em main e feature"
