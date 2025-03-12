@@ -8,4 +8,4 @@ jobs:
     steps:
       - name: Action de teste
         run: | 
-          echo "Executado em pull request na develop"
+          echo "Executando em pull request para a develop"
